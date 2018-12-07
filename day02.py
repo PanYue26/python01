@@ -304,29 +304,43 @@ a='hello'
 # else:
 #     print('\034[34;mlose\034[0m')
 
-import random
-a=['石头','剪刀','布']
-win_list = [['石头', '剪刀'], ['剪刀', '布'], ['布', '石头']]
-time=0
-win=0
-while time<3 :
-    com = random.choice(['石头', '剪刀', '布'])
-    print('计算机的出拳：', com)
-    b = '''
-        0:石头
-        1：剪刀
-        2：布
-        请出拳：'''
-    index=int(input(b))
-    play = a[index]
-    if com==play:
-        print('平局')
-    elif [play,com] in win_list:
-        print('win')
-        win+=1
-        while win > 2
+# import random
+# a=['石头','剪刀','布']
+# win_list = [['石头', '剪刀'], ['剪刀', '布'], ['布', '石头']]
+# time=0
+# win=0
+# while time<3 :
+#     com = random.choice(['石头', '剪刀', '布'])
+#     print('计算机的出拳：', com)
+#     b = '''
+#         0:石头
+#         1：剪刀
+#         2：布
+#         请出拳：'''
+#     index=int(input(b))
+#     play = a[index]
+#     if com==play:
+#         print('平局')
+#     elif [play,com] in win_list:
+#         print('win')
+#         win+=1
+#         while win > 2:
+#             break
+#     else:
+#         print('lose')
+#     time += 1
 
+import random
+a=random.randint(1,100)
+time=0
+while time <5:
+    print(a)
+    b=int(input('请输入一个数字：'))
+    if a < b or a > b:
+        print('你猜错了')
     else:
-        print('lose')
-    time += 1
+        print('猜对了')
+        break
+    time +=1
+
 
