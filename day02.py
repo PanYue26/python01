@@ -330,17 +330,78 @@ a='hello'
 #         print('lose')
 #     time += 1
 
-import random
-a=random.randint(1,100)
-time=0
-while time <5:
-    print(a)
-    b=int(input('请输入一个数字：'))
-    if a < b or a > b:
-        print('你猜错了')
-    else:
-        print('猜对了')
-        break
-    time +=1
+
+
+
+# import random
+# a=random.randint(1,100)
+# time=0
+# while time <5:
+#     print(a)
+#     b=int(input('请输入一个数字：'))
+#     if a < b or a > b:
+#         print('你猜错了')
+#     else:
+#         print('猜对了')
+#         break
+#     time +=1
+#
+#
+#
+#
+# import random
+# a=random.randint(1,100)
+# time=0
+# while time <5:
+#     print(a)
+#     b=int(input('请输入一个数字：'))
+#     if a < b or a > b:
+#         print('你猜错了')
+#     else:
+#         print('猜对了')
+#         break
+#     time +=
+#
+#
+#
+# import random
+# a=random.choice(['石头','剪刀','石头'])
+# b=input('请出拳：')
+# print('计算机的出拳：',a,', 你的出拳：',b)
+# if b=='石头':
+#     if a == '布':
+#         print('你输了')
+#     elif a =='剪刀':
+#         print('你赢了')
+#     else:
+#         print('平局')
+# elif b=='剪刀':
+#     if a == '布':
+#         print('你赢了')
+#     elif a =='剪刀':
+#         print('平局')
+#     else:
+#         print('你输了')
+# else:
+#     if a == '布':
+#         print('平局')
+#     elif a =='剪刀':
+#         print('你输了')
+#     else:
+#         print('你赢了')
+
+# import random
+# a=['石头','剪刀','布']
+# com=random.choice(['石头','剪刀','布'])
+# win=[[[a[0],a[1]]],[[a[1],a[2]]],[a[2],a[0]]]
+# play=input('请出拳：')
+# print('计算机的出拳：',com,', 你的出拳：',play)
+# if com==play:
+#     print('平局')
+# elif [play,com] in win:
+#     print('win')
+# else:
+#     print('lose')
+
 
 
